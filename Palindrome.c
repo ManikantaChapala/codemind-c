@@ -1,22 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int n,b,rem,sum=0;
+    int n,a,rem,rev=0;
     scanf("%d",&n);
-    b=n;
-    while(b>0)
+    a=n;
+    while(a>0)
     {
-        rem=b%10;
-        sum =sum * 10 + rem;
-        b/=10;
+        rem=a%10;
+        rev=rev*10 +rem;
+        a=a/10;
     }
-    if(n==sum)
-    {
-        printf("True");
-    }
-    else 
-    {
-    printf("False");
-    }
-    return 0;
+    if(rev==n) printf("True");
+    else printf("False");
 }
