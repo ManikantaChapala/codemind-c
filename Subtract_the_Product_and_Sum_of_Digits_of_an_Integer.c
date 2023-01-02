@@ -11,4 +11,5 @@ int main()
         n /=10;
     }
     printf("%d",pro-sum);
+    return 0;
 }
